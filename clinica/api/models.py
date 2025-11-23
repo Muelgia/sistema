@@ -1,6 +1,5 @@
-# api/models.py
 from django.db import models
-from django.contrib.auth.models import User # usa o user padrao do django
+from django.contrib.auth.models import User
 
 class Paciente(models.Model):
     # campos da tabela paciente
@@ -10,7 +9,6 @@ class Paciente(models.Model):
     data_nascimento = models.DateField()
     
     def __str__(self):
-        # representacao em texto do objeto
         return self.nome_completo
 
 class Consulta(models.Model):
@@ -19,7 +17,10 @@ class Consulta(models.Model):
     medico = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     data_hora = models.DateTimeField()
     descricao_sintomas = models.TextField(blank=True)
+    
+    link_telemedicina = models.URLField(max_length=200, blank=True, null=True)
 
     def __str__(self):
-        # representacao em texto do objeto
         return f"Consulta de {self.paciente.nome_completo} em {self.data_hora.strftime('%d/%m/%Y %H:%M')}"
+    
+
