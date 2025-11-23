@@ -20,7 +20,7 @@ Siga o passo a passo abaixo para configurar e executar a aplicação em sua máq
 
 ### 1. Clone o repositório
 Abra o terminal e execute o comando abaixo:
-git clone https://github.com/Muelgia/sistema/tree/master
+git clone https://github.com/Muelgia/sistema.git
 cd nome-da-pasta-do-projeto
 
 ### 2. Crie e ative o ambiente virtual (Recomendado)
@@ -74,9 +74,4 @@ Authorization: Token SEU_TOKEN_AQUI
 ---
 
 ## 👤 Autor
-
 Samuel Carlos Garcia
-* RU: 4534424
-* Curso: Análise e Desenvolvimento de Sistemas
-* Instituição: Centro Universitário Internacional UNINTER
-* Semestre: 2025/A1
